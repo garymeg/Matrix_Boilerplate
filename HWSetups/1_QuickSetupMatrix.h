@@ -4,11 +4,11 @@
 #include <SPI.h>
 #include <SD.h>
 #include <Adafruit_Protomatter.h>
-#include "../Libraries/Adafruit_GFX_Library/Adafruit_GFX.h"
-#include "../Fonts/FreeSansBold18pt7b.h" // Large friendly font
-#include "../Fonts/FreeSansBold9pt7b.h"  // Large friendly font
-#include "../Fonts/FreeSans9pt7b.h"      // Large friendly font
-#include "../Fonts/Modeseven_L3n55pt7b.h"// clean 7x8 font
+#include <Adafruit_GFX.h>
+#include <Fonts/FreeSansBold18pt7b.h> // Large friendly font
+#include <Fonts/FreeSansBold9pt7b.h>  // Large friendly font
+#include <Fonts/FreeSans9pt7b.h>      // Large friendly font
+#include <Fonts/Modeseven_L3n55pt7b.h>// clean 7x8 font
 
 // Set Panel Width/Height if not using a Constants.h file
 // to set display WIDTH/HEIGHT
@@ -183,17 +183,19 @@ void Matrix_Setup()
     if (!SD.begin(SDCARD_CS))
     {
         Serial.println("initialization failed!");
-        matrix.print("\nSD Card Init Failed");
+        matrix.print("\nSD Card\nInit Failed");
         matrix.show();
         matrix.fillScreen(myBLACK);
+        matrix.setCursor(0, 0);
 
         delay(2000);
         return;
 
     }
     matrix.println("\n SD Card\nOK");
-    Serial.println("\n SD Card\nOK");
+    Serial.println("\nSD Card\nOK");
     matrix.show();
     delay(2000);
     matrix.fillScreen(myBLACK);
+    matrix.setCursor(0, 0);
 }

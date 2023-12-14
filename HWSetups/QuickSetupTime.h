@@ -1,5 +1,5 @@
 
-#include "../Libraries/ezTime/src/ezTime.h"
+#include <ezTime.h>
 
 
 // Set Timezone

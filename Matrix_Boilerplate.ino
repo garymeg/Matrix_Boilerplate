@@ -1,5 +1,5 @@
 // Adafruit Protomatter matrix driver 
-// Boilerplate code for raspberry Pico(W)
+// Boilerplate code for raspberry Pico(W) 
 // This include ezTime library,
 //              Wifi library,
 //              Scrolling message library
