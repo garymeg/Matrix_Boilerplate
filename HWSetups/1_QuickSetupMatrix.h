@@ -3,7 +3,7 @@
 // Nothing to edit in here
 #include <SPI.h>
 #include <SD.h>
-#include "../Libraries/Adafruit_Protomatter/src/Adafruit_Protomatter.h"
+#include <Adafruit_Protomatter.h>
 #include "../Libraries/Adafruit_GFX_Library/Adafruit_GFX.h"
 #include "../Fonts/FreeSansBold18pt7b.h" // Large friendly font
 #include "../Fonts/FreeSansBold9pt7b.h"  // Large friendly font
